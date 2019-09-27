@@ -1,1 +1,3 @@
-console.log('Started!')
+async function app() {
+    await fetch('https://blog.webvaha.ru')
+}
