@@ -1,3 +1,3 @@
-async function app() {
-    await fetch('https://blog.webvaha.ru')
-}
+import {HeaderComponent} from './components/header.component'
+
+const header = new HeaderComponent('header')
