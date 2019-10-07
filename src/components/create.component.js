@@ -22,9 +22,11 @@ function submitHandler(event) {
     
     if (this.form.isValid()) {
         const formData = {
-            type: this.$el.type.value
+            type: this.$el.type.value,
             ...this.form.value()
         }
+
+        this.form.clear()
     }
     
 }
