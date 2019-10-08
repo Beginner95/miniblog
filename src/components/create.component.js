@@ -23,6 +23,7 @@ function submitHandler(event) {
     if (this.form.isValid()) {
         const formData = {
             type: this.$el.type.value,
+            date: new Date().toLocaleDateString(),
             ...this.form.value()
         }
 
